@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>侯记阳光麻辣火锅鸡 · 全运营方案</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+       background:#F3EFE8;color:#231C15;line-height:1.78;font-size:15px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px;margin:0 auto;background:#F3EFE8;min-height:100vh;}
+
+  .hero{background:linear-gradient(160deg,#17110C 0%,#2B1A10 55%,#43230F 100%);
+        padding:36px 24px 30px;color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;bottom:-80px;width:240px;height:240px;
+        border-radius:50%;background:radial-gradient(circle,rgba(255,130,45,.3),transparent 70%);}
+  .hero .tag{display:inline-block;font-size:11px;letter-spacing:1px;color:#FFAE72;
+        border:1px solid rgba(255,174,114,.42);padding:3px 10px;border-radius:20px;margin-bottom:14px;}
+  .hero h1{font-size:25px;font-weight:800;letter-spacing:.6px;line-height:1.42;}
+  .hero h1 em{font-style:normal;color:#FFB870;}
+  .hero p{font-size:13px;color:#B5A296;margin-top:11px;line-height:1.72;}
+  .hero .kpi{display:flex;gap:9px;margin-top:18px;position:relative;z-index:2;}
+  .hero .kpi div{flex:1;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 4px;text-align:center;border:1px solid rgba(255,255,255,.08);}
+  .hero .kpi b{display:block;font-size:17px;color:#FFB870;font-weight:800;}
+  .hero .kpi span{font-size:10px;color:#9C8B80;}
+
+  .sec{padding:26px 20px 4px;}
+  .sec h2{font-size:17px;font-weight:800;letter-spacing:.4px;margin-bottom:14px;
+        display:flex;align-items:center;gap:8px;}
+  .sec h2 i{font-style:normal;font-size:15px;}
+  .card{background:#fff;border-radius:14px;padding:18px 16px;margin-bottom:14px;
+        box-shadow:0 1px 3px rgba(35,28,21,.06);border:1px solid rgba(35,28,21,.05);}
+  .card h3{font-size:14.5px;font-weight:800;margin-bottom:9px;color:#1C1510;}
+  .card p{font-size:13.8px;color:#4A4038;margin-bottom:9px;}
+  .card p:last-child{margin-bottom:0;}
+  .lead{background:linear-gradient(135deg,#2B1A10,#43230F);color:#fff;border:none;}
+  .lead h3{color:#FFB870;font-size:15px;}
+  .lead p{color:#E8DED5;font-size:14.2px;line-height:1.85;}
+  .lead strong{color:#FFCB9A;}
+
+  table{width:100%;border-collapse:collapse;font-size:12.8px;margin:4px 0 6px;}
+  th{background:#F6F1EA;color:#6B5F54;font-weight:700;text-align:left;padding:8px 7px;
+     border-bottom:1px solid #E7DFD4;font-size:12px;}
+  td{padding:8px 7px;border-bottom:1px solid #F1EBE3;color:#3D342C;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .hot{color:#C2410C;font-weight:800;}
+  .ok{color:#15803D;font-weight:700;}
+  .self{background:#FFF7ED;}
+
+  .num{display:inline-flex;width:20px;height:20px;border-radius:6px;background:#C2410C;color:#fff;
+       font-size:11.5px;font-weight:800;align-items:center;justify-content:center;margin-right:7px;flex-shrink:0;}
+  .li{display:flex;gap:0;font-size:13.8px;color:#4A4038;margin-bottom:10px;line-height:1.75;}
+  .li:last-child{margin-bottom:0;}
+  .li b{color:#1C1510;}
+
+  .warn{background:#FEF3E7;border-left:3px solid #EA8B3C;border-radius:0 10px 10px 0;
+        padding:13px 15px;font-size:13.4px;color:#7C4A1E;margin-bottom:14px;line-height:1.78;}
+  .warn b{color:#9A3E0B;}
+  .danger{background:#FDECEC;border-left:3px solid #D9534F;border-radius:0 10px 10px 0;
+        padding:13px 15px;font-size:13.4px;color:#8A2E2C;margin-bottom:14px;line-height:1.78;}
+
+  .kpis{display:flex;gap:8px;margin-bottom:14px;}
+  .kpis div{flex:1;background:#fff;border-radius:12px;padding:13px 8px;text-align:center;
+            border:1px solid rgba(35,28,21,.06);box-shadow:0 1px 2px rgba(35,28,21,.04);}
+  .kpis b{display:block;font-size:16px;font-weight:800;color:#C2410C;margin-bottom:2px;}
+  .kpis span{font-size:10.5px;color:#8A7C6E;line-height:1.4;display:block;}
+
+  .mapbox{background:#fff;border-radius:14px;padding:8px 6px 2px;margin-bottom:14px;
+          border:1px solid rgba(35,28,21,.05);box-shadow:0 1px 3px rgba(35,28,21,.06);}
+  .mapbox svg{width:100%;height:auto;display:block;}
+  .mapnote{font-size:12px;color:#8A7C6E;padding:0 12px 12px;line-height:1.6;}
+
+  .foot{padding:26px 20px 40px;text-align:center;}
+  .foot p{font-size:12px;color:#9A8E82;line-height:1.9;}
+  .foot b{color:#4A4038;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="tag">天津 · 津南区 · 葛沽商圈</span>
+    <h1>侯记阳光麻辣火锅鸡<br><em>全运营方案</em></h1>
+    <p>门店尚未开业｜葛沽镇域市场<br>商圈火锅鸡记录 16 家，营业中的 6 家全在 480–760 米内，且集中在北、西两个方向</p>
+    <div class="kpi">
+      <div><b>6</b><span>500米内竞品</span></div>
+      <div><b>56%</b><span>同类倒闭率</span></div>
+      <div><b>482m</b><span>最近贴身对手</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🎯</i>一、一页纸结论</h2>
+    <div class="card lead">
+      <h3>这不是一场开业引爆的仗，是一场活过前 90 天的仗。</h3>
+      <p>葛沽商圈火锅鸡留下 16 条记录，<strong>9 家已经倒闭</strong>。开业当天排不排队，跟三个月后还在不在，没有必然关系。</p>
+      <p>核心打法四句话：<strong>用烧饼里脊的老客做种子、用半份鸡拆掉尝试门槛、用午市填平闲置产能、用复购率代替开业人数做考核。</strong></p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🗺️</i>二、竞品地图</h2>
+    <div class="mapbox">
+      <svg viewBox="0 0 500 520" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="260" r="150" fill="none" stroke="#E2D8CA" stroke-width="1" stroke-dasharray="4 4"/>
+        <circle cx="250" cy="260" r="225" fill="none" stroke="#E2D8CA" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="250" y="30" font-size="11" fill="#B0A294" text-anchor="middle">北</text>
+        <text x="250" y="505" font-size="11" fill="#B0A294" text-anchor="middle">南</text>
+        <text x="12" y="264" font-size="11" fill="#B0A294">西</text>
+        <text x="480" y="264" font-size="11" fill="#B0A294" text-anchor="end">东</text>
+        <text x="398" y="104" font-size="10" fill="#C9BCAC" text-anchor="end">500m</text>
+        <text x="472" y="40" font-size="10" fill="#C9BCAC" text-anchor="end">750m</text>
+
+        <circle cx="250" cy="260" r="9" fill="#C2410C"/>
+        <circle cx="250" cy="260" r="16" fill="none" stroke="#C2410C" stroke-width="1.4" opacity="0.35"/>
+        <text x="250" y="292" font-size="12.5" font-weight="700" fill="#C2410C" text-anchor="middle">侯记（本店）</text>
+
+        <circle cx="236" cy="112" r="6" fill="#6B5F54"/>
+        <text x="248" y="108" font-size="11.5" fill="#3D342C">浦记青县流河 · 495m</text>
+
+        <circle cx="145" cy="160" r="6" fill="#6B5F54"/>
+        <text x="157" y="156" font-size="11.5" fill="#3D342C">余乐圈 · 482m</text>
+
+        <circle cx="112" cy="211" r="6" fill="#6B5F54"/>
+        <text x="124" y="207" font-size="11.5" fill="#3D342C">津顺 · 488m</text>
+
+        <circle cx="145" cy="137" r="6" fill="#6B5F54"/>
+        <text x="157" y="133" font-size="11.5" fill="#3D342C">沧州成老灶 · 539m</text>
+
+        <circle cx="51" cy="267" r="6" fill="#6B5F54"/>
+        <text x="63" y="263" font-size="11.5" fill="#3D342C">清真田公子 · 665m</text>
+
+        <circle cx="25" cy="283" r="6" fill="#6B5F54"/>
+        <text x="37" y="300" font-size="11.5" fill="#3D342C">小辉家秘制 · 755m</text>
+
+        <text x="380" y="380" font-size="11" fill="#B0A294" text-anchor="middle">东侧 / 南侧 760m 内</text>
+        <text x="380" y="398" font-size="11" fill="#B0A294" text-anchor="middle">无火锅鸡门店</text>
+      </svg>
+      <div class="mapnote">按 POI 经纬度实算方位与直线距离 · 数据来源：海鸥 CRM</div>
+    </div>
+    <div class="card">
+      <h3>图上一眼能看出来的事</h3>
+      <p>六家竞品全部压在北面和西面，<b>东侧和南侧 760 米内一家火锅鸡都没有</b>。</p>
+      <p>这意味着两件事：一，如果主客流是从东边或南边进镇，侯记是这条动线上第一家；二，开业期所有引流动作，<b>优先砸东、南两个方向</b>，别去北面跟六家抢同一批人。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>📊</i>三、竞争格局</h2>
+    <div class="card">
+      <table>
+        <tr><th>门店</th><th>距离</th><th>方位</th><th>状态</th></tr>
+        <tr class="self"><td><b>侯记阳光麻辣火锅鸡</b></td><td>—</td><td>—</td><td class="ok">尚未开业</td></tr>
+        <tr><td>余乐圈火锅鸡</td><td class="hot">482 m</td><td>西北</td><td class="ok">营业中</td></tr>
+        <tr><td>津顺火锅鸡</td><td class="hot">488 m</td><td>西北</td><td class="ok">营业中</td></tr>
+        <tr><td>浦记青县流河火锅鸡（葛沽店）</td><td class="hot">495 m</td><td>北</td><td class="ok">营业中</td></tr>
+        <tr><td>沧州成老灶火锅鸡（葛沽镇店）</td><td>539 m</td><td>西北</td><td class="ok">营业中</td></tr>
+        <tr><td>清真田公子火锅鸡店</td><td>665 m</td><td>西</td><td class="ok">营业中</td></tr>
+        <tr><td>小辉家秘制火锅鸡（慈水园店）</td><td>755 m</td><td>西</td><td class="ok">营业中</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>已经倒下的 9 家</h3>
+      <p style="font-size:13px;color:#6B5F54;">琪宇烧烤火锅黄焖鸡米饭、凤涛火锅鸡店、余乐圈鸡煲牛蛙店、小电（成老灶葛沽店）、锦濠火锅鸡、元义龙虾火锅鸡、老灶火锅鸡、津顺火锅鸡（老店）、pan 小姐芝士年糕火锅</p>
+      <p style="margin-top:10px;"><b>它们不是没开业，是开完没活下来。</b>这个名单才是方案真正的输入——需求真实，但供给已经过量。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🔍</i>四、三条判断</h2>
+    <div class="card">
+      <h3>① 500 米内 6 家，不是竞争，是贴身肉搏</h3>
+      <p>"我家最好吃""秘制配方""老字号"在这里全部失效——顾客不需要比较六家谁更好，他只需要在走到第三家的时候饿了。</p>
+      <p><b>结论：</b>赢不了"更好吃"，只能赢"更值 / 更近 / 更适合某个场景"。</p>
+    </div>
+    <div class="card">
+      <h3>② 首日爆量救不了店，复购才救命</h3>
+      <p>16 家里 9 家倒闭，死因不是没人来，是<b>来一次就不来了</b>。</p>
+      <p><b>结论：</b>开业期所有动作只考核一个指标——<b>30 天复购率</b>，不考核开业当天桌数。</p>
+    </div>
+    <div class="card">
+      <h3>③ 品类挂错了，正在白丢搜索流量</h3>
+      <p>侯记现在挂「餐饮-火锅-<b>炭火锅/铜锅</b>」，清真田公子挂的是「餐饮-火锅-<b>火锅鸡</b>」。</p>
+      <p>顾客搜"火锅鸡"时，挂错的门店匹配不到。<b>零成本，签约前就该改。</b></p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>⚔️</i>五、定位：打谁，不打谁</h2>
+    <div class="card">
+      <h3>不碰的两家</h3>
+      <p><b>清真田公子</b>——清真标签形成客群壁垒，切不进去。</p>
+      <p><b>沧州成老灶</b>——已签约上系统，大概率在做线上，正面拼线上不划算。</p>
+    </div>
+    <div class="card">
+      <h3>要打的四家：余乐圈、津顺、浦记、小辉</h3>
+      <p>这四家产品结构高度同质，没有明显记忆点。从三个口子切：</p>
+      <div class="li"><span class="num">1</span><div><b>半份鸡</b>——两人来也能点，把"吃火锅鸡"从聚餐降到日常。竞品默认整只起售，我们拆掉这个门槛。</div></div>
+      <div class="li"><span class="num">2</span><div><b>午市空档</b>——火锅鸡是晚市生意，六家中午几乎全闲置。工作日午市双人套餐，产能是白捡的。</div></div>
+      <div class="li"><span class="num">3</span><div><b>侯记阳光双店联动</b>——1795 米外的烧饼里脊还在营业，这是另外六家没有的资产，互相导流不花钱。</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🍲</i>六、菜单结构建议</h2>
+    <div class="card">
+      <table>
+        <tr><th>模块</th><th>结构</th><th>作用</th></tr>
+        <tr><td><b>鸡锅</b></td><td>半只（2人）／整只（3–4人）／大份（5–6人），辣度三档</td><td>半只是拉新钩子，整只是利润款</td></tr>
+        <tr><td><b>配菜</b></td><td>8 款：土豆、宽粉、豆皮、藕片、青菜、菌菇、丸子、豆芽</td><td>控制在 8 个，太多拖慢出餐</td></tr>
+        <tr><td><b>主食</b></td><td>3 款：手工面、饼、米饭</td><td>面 + 饼是火锅鸡的复购记忆点</td></tr>
+        <tr><td><b>凉菜</b></td><td>4 款，做速度款</td><td>等锅时的补偿，压差评</td></tr>
+        <tr><td><b>饮品</b></td><td>自制 2 款（成本低、毛利高、可做赠品）</td><td>开业赠品用这个，别送菜</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:6px;">具体定价需按实际食材成本核算，本方案不给价格承诺</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🗓️</i>七、开业前 15 天：动作清单</h2>
+    <div class="card">
+      <table>
+        <tr><th>时间</th><th>动作</th><th>合格标准</th></tr>
+        <tr><td><b>T-15</b></td><td>改品类为"火锅鸡"</td><td>搜"火锅鸡"能命中本店</td></tr>
+        <tr><td><b>T-14</b></td><td>门店信息补全</td><td>营业时间／电话／地址准确，图片 ≥ 8 张</td></tr>
+        <tr><td><b>T-12</b></td><td>菜单定稿</td><td>按第六章结构，SKU 总数控制在 25 个以内</td></tr>
+        <tr><td><b>T-10</b></td><td>试菜 3 轮</td><td>老板＋后厨＋≥5 名外部试吃，口味问题清零</td></tr>
+        <tr><td><b>T-7</b></td><td>图片拍摄</td><td>锅底／鸡肉特写／配菜拼盘／环境，各 2 张</td></tr>
+        <tr><td><b>T-5</b></td><td>建私域群</td><td>从烧饼里脊老客导入首批 ≥100 人</td></tr>
+        <tr><td><b>T-3</b></td><td>员工培训</td><td>点单话术、加汤时机、续菜规则、差评响应</td></tr>
+        <tr><td><b>T-1</b></td><td>全流程试营业</td><td>20 位邻里老客免单试吃，跑完整动线</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:4px;">T = 计划开业日</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🔥</i>八、开业 7 天：先修，再炸</h2>
+    <div class="card">
+      <h3>D1–D2　不宣传，只看问题</h3>
+      <p>只请老客和邻里，不投任何推广。唯一任务是暴露问题：出餐速度、锅底稳定性、加汤是否及时、服务员会不会推荐。</p>
+      <h3 style="margin-top:14px;">D3　复盘，只改三个最大的问题</h3>
+      <p>别列 20 条整改项，改 3 条就够，改完再开。</p>
+      <h3 style="margin-top:14px;">D4　正式开业</h3>
+      <p><b>不做 5 折以下引流。</b>打折引来一次性客，还把价格锚点打坏，三个月后拉不回来。</p>
+      <h3 style="margin-top:14px;">D5–D7　把流量变资产</h3>
+      <p>每桌必须完成两个动作：加群、领复购券（30 天有效，第二次到店可用）。<b>这两件事比多卖十桌重要。</b></p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🎁</i>九、开业活动配置（四个，不叠加）</h2>
+    <div class="card">
+      <table>
+        <tr><th>活动</th><th>规则</th><th>成本控制</th></tr>
+        <tr><td><b>加群送饮品</b></td><td>到店扫码进群，每桌送自制饮品 2 杯</td><td>单杯成本约 2 元，比送菜便宜</td></tr>
+        <tr><td><b>第二份鸡半价</b></td><td>同桌点两份鸡锅，第二份半价</td><td>鼓励带人，不是降价</td></tr>
+        <tr><td><b>复购券</b></td><td>满 100 减 15，30 天有效，仅第二次到店可用</td><td>成本落在回头客身上</td></tr>
+        <tr><td><b>工作日午市套餐</b></td><td>11:00–14:00 双人套餐（半只鸡＋2 配菜＋2 主食）</td><td>填产能，不抢占晚市</td></tr>
+      </table>
+      <p style="margin-top:10px;"><b>铁律：四个活动不叠加，也不做"全场 5 折"。</b>叠加等于毛利失控，5 折等于把价格锚点钉死。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🛡️</i>十、前 90 天：生存机制</h2>
+    <div class="kpis">
+      <div><b>≥25%</b><span>30天复购率</span></div>
+      <div><b>≥20%</b><span>午市营收占比</span></div>
+      <div><b>≥15%</b><span>外卖营收占比</span></div>
+    </div>
+    <div class="card">
+      <table>
+        <tr><th>阶段</th><th>核心任务</th><th>验收</th></tr>
+        <tr><td><b>第 1 个月</b></td><td>出品与动线跑顺，完成私域沉淀</td><td>群 ≥300 人；复购券核销 ≥50 张</td></tr>
+        <tr><td><b>第 2 个月</b></td><td>午市套餐上线，填补空档产能</td><td>午市营收占比 ≥20%</td></tr>
+        <tr><td><b>第 3 个月</b></td><td>外卖上线，做第二增长曲线</td><td>外卖营收占比 ≥15%</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:4px;">以上为目标口径，非效果承诺</p>
+    </div>
+    <div class="warn">
+      <b>⚠️ 必须回答的一个问题</b><br>
+      475 米外的「侯记香辣牛蛙火锅」已经倒闭。如果与新店是同一老板（需当面核实），第一次沟通就必须问清：<b>上次为什么倒？</b>是产品、位置，还是人手？这个问题不解决，这次会重复。
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🛵</i>十一、外卖：第二个月再上</h2>
+    <div class="card">
+      <p><b>为什么不是开业就上</b>——堂食没跑顺就上外卖，会变成"堂食等 20 分钟、外卖也等 20 分钟"的双输。</p>
+      <h3 style="margin-top:12px;">火锅鸡外卖的三个技术点</h3>
+      <div class="li"><span class="num">1</span><div><b>汤底分离</b>——汤和鸡分装，配送不泡烂，到家再合并加热</div></div>
+      <div class="li"><span class="num">2</span><div><b>鸡肉预煮</b>——外卖单先煮到七分熟，缩短出餐时间</div></div>
+      <div class="li"><span class="num">3</span><div><b>配菜分装</b>——易出水蔬菜单独装，不进汤盒</div></div>
+      <p style="margin-top:10px;"><b>节奏：</b>第 2 个月只开晚市试跑，第 3 个月全时段。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>📦</i>十二、物料清单</h2>
+    <div class="card">
+      <table>
+        <tr><th>物料</th><th>数量</th><th>用途</th></tr>
+        <tr><td>桌卡（含群二维码）</td><td>22 张</td><td>每桌必放，扫码率最高</td></tr>
+        <tr><td>门贴／橱窗海报</td><td>2 套</td><td>路过客流第一眼</td></tr>
+        <tr><td>易拉宝</td><td>2 个</td><td>门口活动规则</td></tr>
+        <tr><td>菜单（防水）</td><td>30 份</td><td>含半份鸡档位</td></tr>
+        <tr><td>复购券卡</td><td>500 张</td><td>结账时发放，不是门口派发</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>💰</i>十三、预算：控制在 8000 以内</h2>
+    <div class="card">
+      <table>
+        <tr><th>项目</th><th>金额</th><th>说明</th></tr>
+        <tr><td>试吃（3 轮）</td><td>约 1500 元</td><td>原材料成本</td></tr>
+        <tr><td>D1–D2 免单试营业</td><td>约 2000 元</td><td>20 人 × 2 天</td></tr>
+        <tr><td>物料制作</td><td>约 1500 元</td><td>桌卡、海报、易拉宝、券卡</td></tr>
+        <tr><td>推广通首月</td><td>约 3000 元</td><td>D10 后开始，按数据加投</td></tr>
+        <tr><td><b>合计</b></td><td class="hot"><b>约 8000 元</b></td><td>不含装修与设备</td></tr>
+      </table>
+      <p style="margin-top:8px;">镇域市场不建议大额投放。钱花在<b>试吃和免单</b>上比花在广告位值——第一批回头客是靠嘴记住的，不是靠曝光。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🚫</i>十四、明确不做的四件事</h2>
+    <div class="card danger">
+      <p><b>① 不做 5 折以下引流</b>——打坏价格锚点，三个月拉不回来。</p>
+      <p><b>② 不用"葛沽第一家""最好吃"这类绝对化表述</b>——广告法风险，顾客也不信。</p>
+      <p><b>③ 不承诺单量、不承诺排名</b>——运营能控的是动作，不是结果。</p>
+      <p><b>④ 堂食没跑顺前不上外卖</b>——两头都做不好，还会招差评。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>📋</i>十五、待确认参数</h2>
+    <div class="card">
+      <table>
+        <tr><th>项目</th><th>当前取值</th><th>来源</th></tr>
+        <tr><td>门店面积</td><td>约 180 ㎡</td><td>假设，待确认</td></tr>
+        <tr><td>桌数</td><td>22 桌（满座约 88 人）</td><td>假设，待确认</td></tr>
+        <tr><td>人均</td><td>45 元</td><td>假设，待确认</td></tr>
+        <tr><td>计划开业日</td><td>待定（按 T-15 倒排）</td><td>待确认</td></tr>
+        <tr><td>与"侯记香辣牛蛙火锅"是否同一老板</td><td>待核实</td><td>电话不一致，需当面问</td></tr>
+      </table>
+      <p style="margin-top:10px;">这三个数一改，第七、八章的时间表按 T 日顺延即可，其余逻辑不变。</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p><b>侯记阳光麻辣火锅鸡 · 全运营方案</b><br>
+    数据口径：海鸥 CRM 门店库（葛沽商圈 840 家门店）<br>
+    2026.11｜天津 · 津南区</p>
+  </div>
+
+</div>
+</body>
+</html>
